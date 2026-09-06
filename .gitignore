@@ -1,0 +1,20 @@
+# Reference templates (raw cloned repos, not part of the project)
+_templates/
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+
+# Python / backend
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/.env
+backend/venv/
+backend/.venv/
+
+# General
+.DS_Store
+*.log

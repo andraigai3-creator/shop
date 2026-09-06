@@ -1,9 +1,9 @@
-FROM python:3.7-slim
+FROM python:3.11-slim
 
-WORKDIR /botname
+WORKDIR /app
 
-COPY requirements.txt /botname/
-RUN pip install -r /botname/requirements.txt
-COPY . /botname/
+COPY requirements.txt /app/
+RUN pip install --no-cache-dir -r /app/requirements.txt
+COPY . /app/
 
-CMD python3 /botname/app.py
+CMD ["python3", "/app/bot.py"]

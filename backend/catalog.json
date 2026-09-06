@@ -1,0 +1,28 @@
+{
+  "categories": [
+    { "id": "clothing",    "label": "Одежда",       "emoji": "👘" },
+    { "id": "books",       "label": "Книги",         "emoji": "📚" },
+    { "id": "prayer",      "label": "Намаз",         "emoji": "🕌" },
+    { "id": "perfume",     "label": "Парфюмерия",    "emoji": "🌹" },
+    { "id": "accessories", "label": "Аксессуары",    "emoji": "📿" }
+  ],
+  "products": [
+    { "id": 1,  "name": "Мужская джубба классическая",    "price": 4500, "category": "clothing" },
+    { "id": 2,  "name": "Хиджаб-шаль премиум",            "price": 1200, "category": "clothing" },
+    { "id": 3,  "name": "Куфия (арафатка) белая",          "price": 800,  "category": "clothing" },
+    { "id": 4,  "name": "Абайя женская (чёрная)",          "price": 5800, "category": "clothing" },
+    { "id": 5,  "name": "Коран с переводом на русский",    "price": 1800, "category": "books"    },
+    { "id": 6,  "name": "«Крепость мусульманина»",         "price": 350,  "category": "books"    },
+    { "id": 7,  "name": "«Сады праведных» (Рияд ас-Салихин)", "price": 2200, "category": "books" },
+    { "id": 8,  "name": "Молитвенный коврик (сажжада)",    "price": 1500, "category": "prayer"   },
+    { "id": 9,  "name": "Тасбих (чётки) 99 бусин",        "price": 650,  "category": "prayer"   },
+    { "id": 10, "name": "Компас кибла + чехол",            "price": 900,  "category": "prayer"   },
+    { "id": 11, "name": "Мисвак (сивак) натуральный",      "price": 280,  "category": "prayer"   },
+    { "id": 12, "name": "Масляные духи «Уд Роял»",         "price": 2800, "category": "perfume"  },
+    { "id": 13, "name": "Атыр «Роза Таифа»",               "price": 950,  "category": "perfume"  },
+    { "id": 14, "name": "Бахур «Муатак» (ароматные палочки)", "price": 1100, "category": "perfume" },
+    { "id": 15, "name": "Браслет «Ля иляха иллаллах»",     "price": 750,  "category": "accessories" },
+    { "id": 16, "name": "Наклейки «Bismillah» (набор 12 шт.)", "price": 320, "category": "accessories" },
+    { "id": 17, "name": "Рамка-постер «99 имён Аллаха»",   "price": 1900, "category": "accessories" }
+  ]
+}

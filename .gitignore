@@ -1,20 +1,21 @@
-# Reference templates (raw cloned repos, not part of the project)
-_templates/
-
-# Node / frontend
+# Node / фронтенд
 frontend/node_modules/
 frontend/dist/
 frontend/.env
-frontend/.env.local
 
-# Python / backend
+# Python / бэкенд
+backend/.env
 backend/__pycache__/
 backend/*.pyc
-backend/*.pyo
-backend/.env
 backend/venv/
 backend/.venv/
+*.egg-info/
 
-# General
+# IDE
 .DS_Store
-*.log
+.idea/
+.vscode/
+*.swp
+
+# Шаблоны (не нужны в репо)
+_templates/

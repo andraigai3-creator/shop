@@ -6,5 +6,5 @@ export default defineConfig({
   plugins: [react()],
   // base нужен для GitHub Pages — меняй на имя репозитория если деплоишь туда
   // Для Vercel оставь '/'
-  base: '/',
+  base: '/shop/',
 })

@@ -1,4 +1,4 @@
-# 🕌 Tazakkur — Исламский магазин (Telegram Mini App)
+# 🕌 Tazakkur — Исламский магазин
 
 Telegram Mini App интернет-магазина исламских товаров.  
 Фронтенд: **React + Vite + TailwindCSS**  

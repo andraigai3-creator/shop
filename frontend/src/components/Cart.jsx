@@ -51,14 +51,17 @@ const Cart = ({ isOpen, onClose, items, totalPrice, onChangeQty, onRemove, onCle
       timestamp: new Date().toISOString(),
     }
 
-    if (tg) {
+    // Пробуем получить Telegram WebApp напрямую (надёжнее чем через props)
+    const telegram = tg || (typeof window !== 'undefined' && window.Telegram?.WebApp) || null
+
+    if (telegram && telegram.sendData) {
       // Реальная отправка в Telegram-бот
-      tg.sendData(JSON.stringify(orderData))
+      telegram.sendData(JSON.stringify(orderData))
       // WebApp закроется автоматически после sendData
     } else {
       // Режим разработки (открыто в браузере)
       console.log('📦 Данные заказа (dev-режим):', orderData)
-      alert(`DEV: Заказ отправлен!\n${JSON.stringify(orderData, null, 2)}`)
+      alert(`✅ Заказ сформирован!\n\nТоваров: ${items.length}\nСумма: ${totalPrice.toLocaleString('ru-RU')} ₽\n\nОткройте магазин через бота Telegram для оформления.`)
     }
   }
 
